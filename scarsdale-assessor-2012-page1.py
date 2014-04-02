@@ -19,7 +19,6 @@ print(svg.xpath('count(//svg:g/svg:g/svg:g/svg:text/*)', namespaces = {'svg':'ht
 def rows(svg):
     texts = svg.xpath('//svg:g/svg:g/svg:g/svg:text/svg:tspan/text()', namespaces = {'svg':'http://www.w3.org/2000/svg'})
     thisrow = []
-    print(texts)
     for text in texts:
         thisrow.append(text)
         if '***' in text and thisrow != []:
