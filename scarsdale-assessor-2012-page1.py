@@ -11,3 +11,6 @@ svg.xpath('//g')
 # Let's use the pretty way. It turns out that there are three nested groups,
 # as we can see inside the Inkscape GUI.
 svg.xpath('//svg:g/svg:g/svg:g', namespaces = {'svg':'http://www.w3.org/2000/svg'})
+svg.xpath('//svg:g/svg:g/svg:g/*', namespaces = {'svg':'http://www.w3.org/2000/svg'})
+svg.xpath('//svg:g/svg:g/svg:g/svg:text/*', namespaces = {'svg':'http://www.w3.org/2000/svg'})
+svg.xpath('count(//svg:g/svg:g/svg:g/svg:text/*)', namespaces = {'svg':'http://www.w3.org/2000/svg'})
