@@ -11,9 +11,12 @@ def rows(fp):
             yield row
             row = []
 
-fwfstruct = struct.Struct('%027s%042s%042s')
+def parse_line_3(line):
+    return {
+        'name': line[:27],
+        'acreage': line[27:71],
+        'village-tax': line[71:],
+    }
 
-r = list(rows(fp))
-
-print(fwfstruct.parse(r[2][3]))
-
+for row in rows(fp):
+    print(parse_line_3(row[3]))
