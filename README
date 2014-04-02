@@ -33,6 +33,7 @@ Things for OCR
 1. pdfimages
 2. tesseract
 3. There's probably some fancier thing just for PDFs, but I haven't used it.
+4. convert (from ImageMagick) for converting image formats
 
 What to install
 
