@@ -1,2 +1,60 @@
+AGENDA
+
+Tom is going to parse a few PDF files in a few different ways each,
+and you're going to ask him questions so that he doesn't get boring.
+
+1. Looking through a large body of PDFs (wetlands permit application notices)
+  * ls, &c.
+  * pdftotext
+  * pdfimages
+2. Inspecting the structure of a PDF (both wetlands and Scarsdale)
+  * pdftohtml and open a web browser
+  * Inkscape
+3. 
+
+SOFTWARE
+
+From most lossy to least lossy
+
+1. Basic file analysis tools (ls or another language's equivalent)
+2. PDF metadata tools (pdfinfo or an equivalent)
+3. pdftotext
+4. pdftohtml -xml
+5. Inkscape via pdf2svg
+6. Things like PDFMiner
+
+Things for OCR
+
+1. pdfimages
+2. tesseract
+3. There's probably some fancier thing just for PDFs, but I haven't used it.
+
+What to install
+
+* pdfinfo, pdftotext, and pdftohtml are in poppler-utils.
+* pdftk is required for pdf2svg.
+
+Other things to look at
+
+* Tabula
+* Overview
+
+OTHER THINGS TO THINK ABOUT
+
+There are all sorts of ways of encoding data in PDF files, so it's not like
+there's a straightforward PDF-to-spreadsheet conversion. (This is just like
+any other file format.) Figure out what data you want to extract from the
+files, and select your parsing strategy accordingly.
+
+And if it seems like too much work to get exactly what you want, try to come
+up with something else that is easier to extract and that will still tell you
+something similar.
+
+Finally, it's quite hard to convert data formats without losing information,
+so don't worry about losing information. You can always write a new parser
+for any other information that you want.
+
+REFERENCES
+
 http://thomaslevine.com/!/parsing-pdfs
 https://github.com/tlevine/scarsdale-data
