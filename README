@@ -14,6 +14,9 @@ and you're going to ask him questions so that he doesn't get boring.
   * pdftohtml and open a web browser
   * Inkscape
 
+The basic approach is pretty much always going to be to convert the PDF
+to some sort of plain text and then to use typical text-parsing methods.
+
 SOFTWARE
 
 From most lossy to least lossy
