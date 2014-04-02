@@ -7,10 +7,12 @@ and you're going to ask him questions so that he doesn't get boring.
   * ls, &c.
   * pdftotext
   * pdfimages
-2. Inspecting the structure of a PDF (both wetlands and Scarsdale)
+2. Doing silly keyword searches
+  * pdfimages and tesseract
+  * grep with regular expressions
+3. Inspecting the structure of a PDF (both wetlands and Scarsdale)
   * pdftohtml and open a web browser
   * Inkscape
-3. 
 
 SOFTWARE
 
