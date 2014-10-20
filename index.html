@@ -1,0 +1,54 @@
+<h1>Parsing PDFs (workshop)</h1>
+
+<h2>Abstract</h2>
+<p>
+  Much of the world's data are stored in portable document format (PDF) files.
+  This is not my preferred storage or presentation format, so I often convert
+  such files into databases, graphs, or spreadsheets. When I'm reading PDF
+  files, I ask these questions.
+</p>
+<ul>
+  <li>Do we need to read the file contents at all?</li>
+  <li>Do we only need to extract the text and/or images?</li>
+  <li>Do we care about the layout of the file?</li>
+</ul>
+<p>
+  I take different approaches to parsing depending on the answers to these
+  questions. I'll show a few different approaches to parsing and analyzing PDF
+  files, and I'll discuss which approaches make sense in which situations. 
+  And we'll try parsing some PDF files.
+</p>
+
+<h2>Before the workshop</h2>
+<p>
+  You are going to learn how to tell computers take information out of
+  PDF files. <strong>If there is a PDF file that you want to read, bring it</strong>.
+</p>
+<p>
+  Also, install as many of the following packages as you can.
+</p>
+<dl>
+  <dt>poppler-utils</dt>
+  <dd>
+    <ul>
+      <li>On GNU/Linux, the package is probably called <code>poppler-utils</code>.</li>
+      <li>On Windows, you try
+          <a href="http://blog.alivate.com.au/poppler-windows/">poppler-windows</a>
+      </li>
+    </ul>
+  </dd>
+</dl>
+pdftk
+
+* On GNU/Linux, your package manager probably has it.
+* On windows, try https://www.pdflabs.com/tools/pdftk-server/
+
+Inkscape
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, try http://inkscape.org/en/download/windows/
+
+Tesseract
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, try https://code.google.com/p/tesseract-ocr/wiki/ReadMe
