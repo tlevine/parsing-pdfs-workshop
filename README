@@ -1,3 +1,19 @@
+ABSTRACT
+
+Much of the world’s data are stored in portable document format (PDF) files.
+This is not my preferred storage or presentation format, so I often convert
+such files into databases, graphs, or spreadsheets. When I'm reading PDF
+files, I ask these questions.
+
+* Do we need to read the file contents at all?
+* Do we only need to extract the text and/or images?
+* Do we care about the layout of the file?
+
+I take different approaches to parsing depending on the answers to these
+questions. I'll show a few different approaches to parsing and analyzing PDF
+files, and I'll discuss which approaches make sense in which situations. 
+And we'll try parsing some PDF files.
+
 BEFORE THE WORKSHOP
 
 We are going to write programs that read PDF files. If there is
@@ -90,6 +106,17 @@ something similar.
 Finally, it's quite hard to convert data formats without losing information,
 so don't worry about losing information. You can always write a new parser
 for any other information that you want.
+
+RELATED THINGS
+
+We are going to run programs from shells in order to do the PDF conversion.
+If you want to embed this in a larger program, you might take a look at this.
+http://thomaslevine.com/!/running-shell-commands/
+
+If you use `pdftohtml -xml` or `inkscape`, you'll probably want to parse the
+resulting XML output. See this page for some directions on doing that in
+different languages.
+http://thomaslevine.com/!/xml-parsers/
 
 REFERENCES
 
