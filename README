@@ -1,3 +1,30 @@
+BEFORE THE WORKSHOP
+
+We are going to write programs that read PDF files. If there is
+a PDF file that you want to read, bring it.
+
+Also, install as many of the following packages as you can.
+
+poppler-utils
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, you try http://blog.alivate.com.au/poppler-windows/
+
+pdftk
+
+* On GNU/Linux, your package manager probably has it.
+* On windows, try https://www.pdflabs.com/tools/pdftk-server/
+
+Inkscape
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, try http://inkscape.org/en/download/windows/
+
+Tesseract
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, try https://code.google.com/p/tesseract-ocr/wiki/ReadMe
+
 AGENDA
 
 Tom is going to parse a few PDF files in a few different ways each,
@@ -17,27 +44,7 @@ and you're going to ask him questions so that he doesn't get boring.
 The basic approach is pretty much always going to be to convert the PDF
 to some sort of plain text and then to use typical text-parsing methods.
 
-PACKAGES TO INSTALL
-
-poppler-utils (pdfinfo, pdftotext, and pdftohtml)
-
-* On GNU/Linux, your package manager probably has it.
-* On Windows, you try http://blog.alivate.com.au/poppler-windows/
-
-pdftk
-
-* On GNU/Linux, your package manager probably has it.
-* On windows, try https://www.pdflabs.com/tools/pdftk-server/
-
-Inkscape
-
-* On GNU/Linux, your package manager probably has it.
-* On Windows, try http://inkscape.org/en/download/windows/
-
-Tesseract
-
-* On GNU/Linux, your package manager probably has it.
-* On Windows, try https://code.google.com/p/tesseract-ocr/wiki/ReadMe
+After Tom shows you all the different ways, you are going to try them!
 
 PROGRAMS
 
@@ -64,6 +71,12 @@ Other things to look at
 * Itext
 
 OTHER THINGS TO THINK ABOUT
+
+I don't understand how PDF files work, so I convert them to an intermediary
+format that I do understand. We tend to lose information when we convert files.
+I choose the intermediary format that removes the most information possible
+while still preserving the information that I care about; this creates a file
+that has the information that I need but is easier to work with.
 
 There are all sorts of ways of encoding data in PDF files, so it's not like
 there's a straightforward PDF-to-spreadsheet conversion. (This is just like
