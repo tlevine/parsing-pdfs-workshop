@@ -17,7 +17,29 @@ and you're going to ask him questions so that he doesn't get boring.
 The basic approach is pretty much always going to be to convert the PDF
 to some sort of plain text and then to use typical text-parsing methods.
 
-SOFTWARE
+PACKAGES TO INSTALL
+
+poppler-utils (pdfinfo, pdftotext, and pdftohtml)
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, you try http://blog.alivate.com.au/poppler-windows/
+
+pdftk
+
+* On GNU/Linux, your package manager probably has it.
+* On windows, try https://www.pdflabs.com/tools/pdftk-server/
+
+Inkscape
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, try http://inkscape.org/en/download/windows/
+
+Tesseract
+
+* On GNU/Linux, your package manager probably has it.
+* On Windows, try https://code.google.com/p/tesseract-ocr/wiki/ReadMe
+
+PROGRAMS
 
 From most lossy to least lossy
 
@@ -25,7 +47,7 @@ From most lossy to least lossy
 2. PDF metadata tools (pdfinfo or an equivalent)
 3. pdftotext
 4. pdftohtml -xml
-5. Inkscape via pdf2svg
+5. Inkscape (maybe via pdf2svg)
 6. Things like PDFMiner
 
 Things for OCR
@@ -34,11 +56,6 @@ Things for OCR
 2. tesseract
 3. There's probably some fancier thing just for PDFs, but I haven't used it.
 4. convert (from ImageMagick) for converting image formats
-
-What to install
-
-* pdfinfo, pdftotext, and pdftohtml are in poppler-utils.
-* pdftk is required for pdf2svg.
 
 Other things to look at
 
