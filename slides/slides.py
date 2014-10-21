@@ -50,7 +50,6 @@ header = r'''
   \section*{#1}
 }
 \begin{document}
-\centering
 '''
 
 footer = r'''
