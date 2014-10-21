@@ -10,3 +10,7 @@ scarsdale-assessor-2012.xml:
 	pdftohtml -xml scarsdale-assessor-2012.pdf
 scarsdale-assessor-2012-page1.svg:
 	inkscape --without-gui --export-plain-svg scarsdale-assessor-2012-page1.svg scarsdale-assessor-2012.pdf
+scarsdale-assessor-2012-page88.pdf:
+	pdftk scarsdale-assessor-2012.pdf cat 88 output scarsdale-assessor-2012-page88.pdf
+scarsdale-assessor-2012-page88.svg: scarsdale-assessor-2012-page88.pdf
+	inkscape --without-gui --export-plain-svg scarsdale-assessor-2012-page88.svg scarsdale-assessor-2012-page88.pdf
