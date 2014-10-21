@@ -58,14 +58,25 @@ header = r'''
 \noindent \url{http://thomaslevine.com}
 
 \newslide{Data can be represented in many ways}
+Three representations of the same data (from \url{http://treasury.io})
+\begin{itemize}
+\item Weird text files: \url{http://www.fms.treas.gov/dts/index.html}
+\item SQL: \url{http://treasury.io}
+\item \href{http://small.dada.pink/gastronomification-big-data-talk/fms-symphony.webm}{Music video}
+\end{itemize}
 
+\newslide{PDFs can be parsed in many ways.}
+Your PDF parser will be different depending on the data you want.
 
 \newslide{I don't know how PDFs work.}
 So I convert PDFs to formats that I understand better.
 
 \includegraphics[width=\textwidth]{intermediary-format.eps}
 
-\newslide{Questions to ask}
+\newslide{Which program do I use for the first step?}
+It depends on the data I want.
+
+\newslide{What data do I want?}
 \begin{itemize}
 \item Do we need to read the file contents at all?
 \item Do we only need to extract the text and/or images?
