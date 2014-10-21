@@ -7,8 +7,8 @@ prizren-zoning.txt: prizren-zoning.pdf
 prizren-zoning-layout.txt: prizren-zoning.pdf
 	pdftotext -layout prizren-zoning.pdf prizren-zoning-layout.txt
 prizren-zoning.html: prizren-zoning.pdf
-	pdftohtml prizren-zoning.pdf
+	pdftohtml -nodrm prizren-zoning.pdf
 prizren-zoning.xml: prizren-zoning.pdf
-	pdftohtml -xml prizren-zoning.pdf
+	pdftohtml -nodrm -xml prizren-zoning.pdf
 prizren-zoning.svg: prizren-zoning.pdf
 	inkscape --without-gui --export-plain-svg prizren-zoning.svg prizren-zoning.pdf
