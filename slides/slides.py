@@ -7,7 +7,7 @@ def main():
     sys.stdout.write(header)
     for directory in ['public-notice','scarsdale-assessor','prizren-zoning']:
         sys.stdout.write('\sectionslide{%s}\n' % directory)
-        makefile = os.path.join(directory, 'Makefile')
+        makefile = os.path.join('..', directory, 'Makefile')
         with open(makefile) as fp:
             for title, command in makefile_to_slides(fp):
                 sys.stdout.write('\slide{%s}{%s}\n' % (title, command))
