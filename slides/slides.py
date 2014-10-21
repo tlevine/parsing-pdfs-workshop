@@ -89,7 +89,7 @@ footer = r'''
 \newslide{One thing to remember}
 If you remember nothing else, remember this.
 \begin{quotation}
-\textbf
+\LARGE\bfseries\centering\noindent
 You have the power to take things apart and make new things.
 \end{quotation}
 PDF files are complicated, but they are not magic. You can take
