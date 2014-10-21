@@ -57,6 +57,12 @@ header = r'''
 
 \noindent \url{http://thomaslevine.com}
 
+% You just heard a lot about some wonderful things people are doing
+% in relation to sharing information. There are a lot of ways we can
+% store information in computer files, so we often need to convert
+% data between different formats. So I'm going to give you a little
+% taste of that process.
+
 \newslide{Data can be represented in many ways}
 Three representations of the same data (from \url{http://treasury.io})
 \begin{itemize}
