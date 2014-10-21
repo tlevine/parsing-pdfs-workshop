@@ -7,7 +7,7 @@ from sliding_window import window
 
 def main():
     sys.stdout.write(header)
-    for directory in ['public-notice','scarsdale-assessor','prizren-zoning']:
+    for directory in ['public-notice', 'prizren-zoning']:
         sys.stdout.write('\\newslide{%s}\n' % directory)
         makefile = os.path.join('..', directory, 'Makefile')
         with open(makefile) as fp:
@@ -86,6 +86,21 @@ It depends on the data I want.
 '''
 
 footer = r'''
+\newslide{One thing to remember}
+If you remember nothing else, remember this.
+\begin{quotation}
+\textbf
+You have the power to take things apart and make new things.
+\end{quotation}
+PDF files are complicated, but they are not magic. You can take
+them apart and make something new with them. (It might just take a while.)
+
+It's not just PDFs files; everything in the world (even atoms)
+can be broken up into smaller pieces and turned into something new.
+
+\newslide{Hands-on section}
+Now you're going to try running these programs!
+
 \end{document}
 '''
 
