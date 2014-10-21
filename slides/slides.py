@@ -30,20 +30,20 @@ def makefile_to_slides(fp):
             lines = tokens[0]
 
             for prevtoken, thistoken in window(tokens, 2):
-                if prevtoken.startswith('-') and not thistoken.startswith('-'):
-                    lines += ' \\\n    %s %s' % (prevtoken, thistoken)
-                elif prevtoken.startswith('-') and thistoken.startswith('-'):
+                if prevtoken.startswith('--') and not thistoken.startswith('--'):
+                    lines += ' \\\n  %s %s' % (prevtoken, thistoken)
+                elif prevtoken.startswith('--') and thistoken.startswith('--'):
                     pass
-                elif not prevtoken.startswith('-') and not thistoken.startswith('-'):
-                    if len(lines.split('\n')[-1] + thistoken) < 20:
+                elif not prevtoken.startswith('--') and not thistoken.startswith('--'):
+                    if len(lines.split('\n')[-1] + thistoken) < 15:
                         lines += ' %s' % thistoken
                     else:
-                        lines += ' \\\n    %s' % thistoken
+                        lines += ' \\\n  %s' % thistoken
                     
             yield title, lines
 
 header = r'''
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[a6paper,landscape]{geometry}
 \newcommand\newslide[1] {
   \newpage
