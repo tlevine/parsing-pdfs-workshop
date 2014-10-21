@@ -1,3 +1,5 @@
+all: scarsdale-assessor-2012.txt scarsdale-assessor-2012-layout.txt scarsdale-assessor-2012.html scarsdale-assessor-2012.xml scarsdale-assessor-2012-page1.svg
+
 scarsdale-assessor-2012.txt:
 	pdftotext scarsdale-assessor-2012.pdf
 scarsdale-assessor-2012-layout.txt:
