@@ -83,6 +83,10 @@ It depends on the data I want.
 \item Do we care about the layout of the file?
 \end{itemize}
 
+\newslide{I like to sleep.}
+I choose try to do things the easiest or fastest way possible
+because I would rather have time to sleep.
+
 \newslide{Do we need to read the file at all?}
 Some filenames
 \begin{itemize}
