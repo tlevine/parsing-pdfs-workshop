@@ -61,7 +61,6 @@ header = r'''
 
 
 \newslide{I don't know how PDFs work.}
-
 So I convert PDFs to formats that I understand better.
 
 \includegraphics[width=\textwidth]{intermediary-format.eps}
