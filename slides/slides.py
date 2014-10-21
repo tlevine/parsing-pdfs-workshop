@@ -63,6 +63,13 @@ header = r'''
 % data between different formats. So I'm going to give you a little
 % taste of that process.
 
+% PDF files are very popular. My slides, for example, are in PDF format.
+% PDF files are nice for printing out on paper. They're not very helpful
+% if you want to make graphs from the information in the PDF. I'm going
+% to show you how I take information out of PDF format files so I can
+% use it for other purposes.
+
+% The first thing we need to realize is that
 \newslide{Data can be represented in many ways}
 Three representations of the same data (from \url{http://treasury.io})
 \begin{itemize}
