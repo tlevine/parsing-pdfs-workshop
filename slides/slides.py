@@ -52,7 +52,7 @@ header = r'''
   \section*{#1}
 }
 \begin{document}
-\newslide{How I parse PDF files}
+\newslide{How I get information out of PDF files}
 \noindent Thomas Levine
 
 \noindent \url{http://thomaslevine.com}
@@ -65,8 +65,8 @@ Three representations of the same data (from \url{http://treasury.io})
 \item \href{http://small.dada.pink/gastronomification-big-data-talk/fms-symphony.webm}{Music video}
 \end{itemize}
 
-\newslide{PDFs can be parsed in many ways.}
-Your PDF parser will be different depending on the data you want.
+\newslide{We can read PDFs in many ways.}
+Your program will be different depending on the data you want.
 
 \newslide{I don't know how PDFs work.}
 So I convert PDFs to formats that I understand better.
@@ -83,6 +83,19 @@ It depends on the data I want.
 \item Do we care about the layout of the file?
 \end{itemize}
 
+\newslide{Do we need to read the file at all?}
+Some filenames
+\begin{itemize}
+\item 06072900.txt
+\item 06073000.txt
+\item 06080100.txt
+\item 13020400.txt 
+\item 13020500.txt 
+\item 13020600.txt 
+\end{itemize}
+The filenames are dates (\texttt{yymmdd00.txt}).
+
+If I just want the date, I don't need to look into the file.
 '''
 
 footer = r'''
