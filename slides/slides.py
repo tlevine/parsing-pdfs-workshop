@@ -53,16 +53,18 @@ header = r'''
 }
 \begin{document}
 \newslide{How I parse PDF files}
-Thomas Levine
+\noindent Thomas Levine
 
-\url{http://thomaslevine.com}
+\noindent \url{http://thomaslevine.com}
 
 \newslide{Data can be represented in many ways}
 
 
 \newslide{I don't know how PDFs work.}
+
 So I convert PDFs to formats that I understand better.
-\includegraphics{intermediary-format.eps}
+
+\includegraphics[width=\textwidth]{intermediary-format.eps}
 
 \newslide{Questions to ask}
 \begin{itemize}
