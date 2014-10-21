@@ -44,12 +44,33 @@ def makefile_to_slides(fp):
 
 header = r'''
 \documentclass[12pt]{article}
+\usepackage{hyperref}
 \usepackage[a6paper,landscape]{geometry}
+\usepackage{svg}
 \newcommand\newslide[1] {
   \newpage
   \section*{#1}
 }
 \begin{document}
+\newslide{How I parse PDF files}
+Thomas Levine
+
+\url{http://thomaslevine.com}
+
+\newslide{Data can be represented in many ways}
+
+
+\newslide{I don't know how PDFs work.}
+So I convert PDFs to formats that I understand better.
+\includegraphics{intermediary-format.eps}
+
+\newslide{Questions to ask}
+\begin{itemize}
+\item Do we need to read the file contents at all?
+\item Do we only need to extract the text and/or images?
+\item Do we care about the layout of the file?
+\end{itemize}
+
 '''
 
 footer = r'''
