@@ -116,6 +116,19 @@ If I just want the date, I don't need to look into the file.
 '''
 
 footer = r'''
+\newslide{Images}
+Extract the images.
+\begin{quotation}
+\texttt{pdfimages scanned-document.pdf image-filename-root}
+\end{quotation}
+Now we can forget about the PDF and treat them as images!
+
+\newslide{Optical character recognition}
+These images are often scans of text, so look at tesseract.
+\begin{quotation}
+\textt{tesseract image-file.png}
+\end{quotation}
+
 \newslide{One thing to remember}
 If you remember nothing else, remember this.
 \begin{quotation}
