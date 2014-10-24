@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import lxml.etree
 
-xml = lxml.etree.parse('public_notice.xml')
+xml = lxml.etree.parse('public-notice.xml')
 
 # Select the header
 print(xml.xpath('//text[b[contains(text(),"PUBLIC NOTICE")]]'))
