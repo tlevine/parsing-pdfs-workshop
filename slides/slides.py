@@ -118,28 +118,33 @@ If I just want the date, I don't need to look into the file.
 footer = r'''
 \newslide{Images}
 Extract the images.
-\begin{quotation}
-\texttt{pdfimages scanned-document.pdf image-filename-root}
-\end{quotation}
+\begin{verbatim}
+pdfimages scanned-document.pdf image-filename-root
+\end{verbatim}
 Now we can forget about the PDF and treat them as images!
 
 \newslide{Optical character recognition}
 These images are often scans of text, so look at tesseract.
-\begin{quotation}
-\textt{tesseract image-file.png}
-\end{quotation}
+\begin{verbatim}
+tesseract image-file.png
+\end{verbatim}
 
-\newslide{One thing to remember}
-If you remember nothing else, remember this.
+\newslide{One last thing: Why I like hackerspaces}
+Common non-hackery attitude:
 \begin{quotation}
-\LARGE\bfseries\centering\noindent
-You have the power to take things apart and make new things.
+\textbf{They} understand this complicated thing, but \textbf{we} don't.
+Fortunately, \textbf{they} made an app so that \textbf{we} can do this thing
+without understanding how it works.
 \end{quotation}
+\begin{itemize}
+\item The division between them and us scares me.
+\item Their app often isn't very good for us anyway.
+\end{itemize}
+
+\newslide{Taking things apart}
+You have the power to take things apart and make new things.
 PDF files are complicated, but they are not magic. You can take
 them apart and make something new with them. (It might just take a while.)
-
-It's not just PDFs files; everything in the world (even atoms)
-can be broken up into smaller pieces and turned into something new.
 
 \newslide{Hands-on section}
 Now you're going to try running these programs!
