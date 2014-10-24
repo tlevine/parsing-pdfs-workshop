@@ -136,6 +136,7 @@ Common non-hackery attitude:
 Fortunately, \textbf{they} made an app so that \textbf{we} can do this thing
 without understanding how it works.
 \end{quotation}
+Problems with this attitude:
 \begin{itemize}
 \item The division between them and us scares me.
 \item Their app often isn't very good for us anyway.
